@@ -1,0 +1,106 @@
+.amazing-services {
+  padding: 0 10px;
+  margin-bottom: 83px;
+}
+
+.amazing-services__item {
+  flex: 0 0 381px;
+
+  &:nth-child(-n + 3) {
+    margin-bottom: 94px;
+  }
+}
+
+.amazing-services__article {
+  position: relative;
+  padding-left: 82px;
+
+  &::before {
+    @include pseudo();
+    position: absolute;
+    left: 20px;
+    top: 0;
+    width: 32px;
+    height: 32px;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+// .amazing-services__article--alarm-clock::before {
+//   background-image: url(../../images/icons/feature-icons/alarm-clock.png);
+// }
+
+// .amazing-services__article--chart::before {
+//   background-image: url(../../images/icons/feature-icons/chart.png);
+// }
+
+// .amazing-services__article--computer::before {
+//   background-image: url(../../images/icons/feature-icons/computer.png);
+// }
+
+// .amazing-services__article--book::before {
+//   background-image: url(../../images/icons/feature-icons/book.png);
+// }
+
+// .amazing-services__article--home::before {
+//   background-image: url(../../images/icons/feature-icons/home.png);
+// }
+
+// .amazing-services__article--square::before {
+//   background-image: url(../../images/icons/feature-icons/square.png);
+// }
+
+// /* Media */
+// @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+//   .amazing-services__article--alarm-clock::before {
+//     background-image: url(../../images/icons/feature-icons/alarm-clock@2x.png);
+//   }
+
+//   .amazing-services__article--chart::before {
+//     background-image: url(../../images/icons/feature-icons/chart@2x.png);
+//   }
+
+//   .amazing-services__article--computer::before {
+//     background-image: url(../../images/icons/feature-icons/computer@2x.png);
+//   }
+
+//   .amazing-services__article--book::before {
+//     background-image: url(../../images/icons/feature-icons/book@2x.png);
+//   }
+
+//   .amazing-services__article--home::before {
+//     background-image: url(../../images/icons/feature-icons/home@2x.png);
+//   }
+
+//   .amazing-services__article--square::before {
+//     background-image: url(../../images/icons/feature-icons/square@2x.png);
+//   }
+// }
+
+$icons: alarm-clock, chart, computer, book, home, square;
+
+@include generate-pseudo-icons(
+  'amazing-services__article--',
+  $icons,
+  '../images/icons/feature-icons/',
+  'png'
+);
+
+.amazing-services__article-title {
+  margin: 0 0 14px 0;
+  font-family: 'Montserrat', sans-serif;
+  @include font-settings($main-title-font-size, 1.2);
+  font-weight: 400;
+  color: $main-grey-color;
+  text-transform: uppercase;
+}
+
+.amazing-services__article-text {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: $main-text-font-size;
+  line-height: $main-line-height;
+  font-weight: 400;
+  color: $main-grey-color;
+}

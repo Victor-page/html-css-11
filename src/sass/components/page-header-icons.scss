@@ -1,0 +1,29 @@
+.page-header-icons {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0;
+  width: 78px;
+}
+
+.page-header-icons__item {
+  // @include center-flex('ver');
+  display: flex;
+}
+
+.page-header-icons__button {
+  @extend %button;
+  background-color: transparent;
+}
+
+.page-header-icons__icon {
+  @extend %icon;
+  width: 18px;
+  height: 18px;
+  fill: $white-color;
+
+  &:hover,
+  &:focus {
+    fill: $main-yellow-color;
+  }
+}

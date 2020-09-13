@@ -1,0 +1,22 @@
+%link {
+  display: inline-block;
+  text-decoration: none;
+}
+
+%list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+%button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}
+
+%icon {
+  display: inline-block;
+  transition: fill 200ms linear;
+}

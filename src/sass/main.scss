@@ -1,0 +1,32 @@
+/*
+ * Все паршалы импортировать в этот файл
+ */
+
+@import 'libs/vars';
+@import 'libs/placeholders';
+@import 'libs/mixins';
+@import 'libs/normalize';
+@import 'libs/fonts';
+@import 'libs/base';
+
+// Components
+@import 'components/container';
+@import 'components/section';
+@import 'components/page-header-wrapper.scss';
+@import 'components/page-header.scss';
+@import 'components/site-logo';
+@import 'components/header-inner';
+@import 'components/page-nav';
+@import 'components/site-navigation';
+@import 'components/page-header-icons';
+@import 'components/starting';
+
+@import 'components/page-main-wrapper';
+@import 'components/amazing-services';
+@import 'components/meet-our-team';
+@import 'components/figure';
+@import 'components/socials';
+
+@import 'components/page-footer';
+@import 'components/license';
+@import 'components/subscribe';
